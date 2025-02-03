@@ -1,0 +1,245 @@
+/* Main container for the layout */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  padding-top: 60px; /* Adjust for the navbar height */
+  margin-left: 200px; /* Space for the sidenav */
+}
+
+/* Sidebar styling */
+.sidenav {
+  position: fixed;
+  top: 60px; /* Adjust for the navbar height */
+  left: 0;
+  width: 200px; /* Or any fixed width you want for sidenav */
+  height: 100%;
+  background-color: #e29f19;
+  padding-top: 20px;
+}
+
+.sidenav-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #444;
+  color: white;
+  text-align: left;
+  border: none;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.sidenav-button:hover {
+  background-color: #555;
+}
+
+/* Main content area */
+.main-content {
+  margin-left: 200px; /* Make room for the sidenav */
+  width: 100%;
+  padding: 20px;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  overflow: auto;
+}
+
+
+
+
+.services {
+  cursor: pointer;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #564a4a54;
+  padding: 0;
+}
+
+.dropdown li a {
+  padding: 10px 20px;
+}
+
+.services:hover .dropdown {
+  display: white;
+}
+
+.dropdown li a:hover {
+  background-color: #d4d421;
+}
+/* Sidenav.css */
+
+.sidenav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  background-color: #c35816;
+  color: white;
+  padding-top: 20px;
+}
+
+.sidenav button {
+  width: 100%;
+  padding: 15px;
+  background-color: #100a01;
+  border: none;
+  color: white;
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.sidenav button:hover {
+  background-color: #30b271;
+}
+/* App.css */
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.content-container {
+  display: flex;
+  flex: 1;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  margin-left: 250px; /* Space for the sidebar */
+  padding-bottom: 60px; /* Space for the footer */
+}
+
+/* Add any additional global styles here */
+/* App.css */
+
+/* Main container for the whole app */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/* Content container (Main content area and Navbar) */
+.content-container {
+  display: flex;
+  flex: 1;
+  margin-left: 250px; /* Adjust this value based on the width of your sidenav */
+  margin-top: 60px; /* Adjust this value based on the height of your navbar */
+}
+
+/* Main content area */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  margin-bottom: 60px; /* Space for footer */
+  padding-left: 20px;
+}
+
+/* Footer styling */
+footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 768px) {
+  .content-container {
+    margin-left: 0; /* No sidenav on small screens */
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding: 10px;
+  }
+}
+/* Sidenav.css */
+
+ Fixed side.sidenav {
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  padding-top: 30px;
+}
+
+.sidenav-button {
+  background-color: #444;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  font-size: 16px;
+}
+
+.sidenav-button:hover {
+  background-color: #555;
+}
+/* Main container for the whole app */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/* Sidebar and main content container */
+.main-content-container {
+  display: flex;
+  flex: 1;
+  margin-left: 250px; /* Adjust based on the width of your sidenav */
+  margin-top: 60px; /* Adjust based on navbar height */
+}
+
+/* Content wrapper inside main content container */
+.content-wrapper {
+  flex: 1;
+  padding: 20px;
+  margin-bottom: 60px; /* Make space for footer */
+}
+
+
+
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+
+  .main-content-container {
+    padding-left: 0;
+  }
+
+  .sidenav {
+    width: 100%;
+    position: relative;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .sb_footer-links {
+    flex-direction: column;
+  }
+}
+.sidenav-button:hover {
+  background-color: #555;
+}
+
+
+
