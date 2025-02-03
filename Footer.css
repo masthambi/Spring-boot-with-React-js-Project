@@ -1,0 +1,44 @@
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;  /* Reduced padding */
+  text-align: center;
+  left: 400px;
+  font-size: 14px;  /* Reduced font size */
+  width: 130%; 
+}
+
+/* Footer Links */
+.sb_footer-links {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;  /* Reduced padding for links */
+}
+
+.sb_footer-links-div {
+  flex: 1;
+  padding: 5px;  /* Reduced padding */
+}
+
+.sb_footer-links-div h3 {
+  margin-bottom: 8px;  /* Reduced margin */
+}
+
+.sb_footer-links-div a {
+  text-decoration: none;
+  color: #ddd;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 12px;  /* Reduced font size for links */
+}
+
+.sb_footer-links-div a:hover {
+  color: white;
+}
+
+/* Image Size Adjustment */
+.footer img {
+  max-width: 80%;  /* Decreases the image width */
+  height: auto;  /* Keeps the aspect ratio intact */
+}

@@ -1,0 +1,142 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding-top: 60px; 
+}
+
+header {
+  background-color: #0e1a18cb; 
+  width: 100%;
+  position: fixed; 
+  top: 0; 
+  left: 0;
+  z-index: 1000; 
+}
+
+nav {
+  display: flex; /* Use Flexbox for the navbar */
+  justify-content: space-between; /* Space out the items across the full width */
+  align-items: center; /* Align items vertically in the center */
+  width: 100%; /* Full width of the screen */
+  padding: 10px 20px; /* Padding around the navbar */
+}
+
+/* Logo container with flexbox */
+.navbar .logo {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+  justify-content: flex-start; /* Align logo to the left */
+}
+
+/* Adjust logo size */
+.navbar img {
+  width: 80px; /* Set logo width */
+  height: auto;
+  margin-right: 10px; /* Adjust spacing between image and text */
+}
+
+/* Styling for the logo text */
+.navbar .logo h4 {
+  color: white; /* Set the text color */
+  font-size: 20px; /* Adjust font size */
+  font-weight: bold;
+  margin-left: 250px;
+}
+
+/* Navbar links container */
+nav ul {
+  display: flex; 
+  list-style-type: none; 
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  position: relative;
+  margin: 0 20px; 
+}
+
+nav ul li a {
+  color: rgb(254, 247, 253);
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  padding: 15px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #2b6798;
+  border-radius: 5px;
+}
+
+.services {
+  cursor: pointer;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #dfa91e;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 200px; 
+}
+
+.dropdown li a {
+  padding: 12px 20px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.services:hover .dropdown {
+  display: block;
+}
+
+.dropdown li a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Navbar positioning */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0; /* Align the navbar to the left */
+  width: 100%;
+  background-color: #333;
+  color: white;
+  z-index: 1000;
+  padding: 10px 20px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack navbar items vertically on smaller screens */
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start; /* Align the items to the left */
+  }
+
+  .navbar .logo {
+    margin-bottom: 40px; /* Give some space between logo and navbar items */
+  }
+}
