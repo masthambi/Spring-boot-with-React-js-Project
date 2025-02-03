@@ -1,0 +1,18 @@
+import axios from "axios"
+
+const REST_API_BASE_URL='http://localhost:8080/api/admin';
+
+export const listAdmin=()=> axios.get(REST_API_BASE_URL)
+export const createAdmin=(admin)=> axios.post(REST_API_BASE_URL,admin)
+export const getAdmins=(adminId) =>axios.get(REST_API_BASE_URL + '/'+adminId);
+export const updateAdmin=(adminId,admin) =>axios.put(REST_API_BASE_URL + '/'+ adminId,admin);
+export const deleteAdmin=(adminId)=>axios.delete(REST_API_BASE_URL + '/' + adminId);
+
+export const fetchAdmins = (offset, pageSize) => {
+    return axios.get(`${REST_API_BASE_URL}/admins/${offset}/${pageSize}`);
+  };
+
+  export const fetchAdminsWithSorting = (offset, pageSize, field) => {
+    return axios.get(`${REST_API_BASE_URL}/sort/${offset}/${pageSize}/${field}`);
+  };
+  
